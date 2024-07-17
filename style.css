@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition-duration: 0.3s;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: rgb(255, 26, 26);
+  color: white;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  background-image: url(section-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+}
+
+.main-box {
+  height: 120vh;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-div {
+  flex-direction: column;
+  height: 35%;
+}
+
+.text1 {
+  font-size: 0.8rem;
+  line-height: 50px;
+  letter-spacing: 4px;
+  color: #ffe379;
+  padding-top: 50px;
+  font-family: "Raleway", sans-serif;
+}
+
+.text2 {
+  font-size: 1.9rem;
+  color: white;
+  font-weight: 800;
+  font-family: "Oswald";
+}
+
+.text3 {
+  color: gray;
+  font-family: "Raleway", sans-serif;
+  padding-inline: 30px;
+  font-size: 13px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.bottom-div {
+  height: 55%;
+  margin-top: 40px;
+  margin-inline: 20px;
+  overflow-x: scroll;
+}
+
+.bottom-div {
+  display: flex;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 15px;
+  padding: 20px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.inner-box1 {
+  color: gray;
+  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  height: 100%;
+}
+
+#name {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 800;
+  font-family: "Oswald";
+}
+
+#ceo {
+  font-size: 0.8rem;
+  line-height: 30px;
+  color: #ffe379;
+  font-family: "Raleway", sans-serif;
+}
+
+.inner-box2 {
+  padding-inline: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* -----------hover effects---------- */
+.inner-box1:hover{
+  color: white;
+  transition-duration: 0.1s;
+}
+
+
+
+/* --------------responsive for big screen---------- */
+
+@media (min-width: 768px) {
+  .text1 {
+    font-size: 1rem;
+  }
+  .text2 {
+    font-size: 3.5rem;
+  }
+  .text3 {
+    font-size: 16px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    height: 350px;
+  }
+  .inner-box1 {
+    font-size: 1rem;
+  }
+  .inner-box2{
+    padding-inline: 5px;
+  }
+  #ceo {
+    font-size: 0.7rem;
+  }
+  #name {
+    font-size: 1.1rem;
+  }
+  #symbol{
+    width: 30px;
+    height: 30px;
+  }
+}
